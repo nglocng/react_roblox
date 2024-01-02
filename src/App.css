@@ -33,6 +33,11 @@
   color: #270E0F;
 }
 
+.button-signup
+{
+margin-right: 20px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -1,15 +1,28 @@
-import { useState } from 'react';
-import './App.css';
+import { useState, Fragment } from 'react'
+import './App.css'
 import Button from "react-bootstrap/Button"
 import "bootstrap/dist/css/bootstrap.min.css"
-import Modal from 'react-bootstrap/Modal';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
+import Modal from 'react-bootstrap/Modal'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Image from 'react-bootstrap/Image'
+import Header from './components/Header'
+
+function App() {
+  return (
+    <Fragment>
+      <Header />    
+
+      <p>Day la app react dau tien cua toi</p>
+    </Fragment>
+  )
+}
+
+export default App
 
 
-function Example() {
+/* function Example() {
   const [show, setShow] = useState(false)
   const [showChild, setShowChild] = useState(false)
 
@@ -17,6 +30,7 @@ function Example() {
     setShow(false)
     setShowChild(true)
   };
+  
   const handleShow = () => setShow(true)
   const handleCloseChild = () => setShowChild(false)
   const handleShowChild = () => setShowChild(true)
@@ -46,26 +60,26 @@ function Example() {
       <Modal show={showChild} onHide={handleCloseChild}>
 
         <Modal.Body >
-        <p class="text-center">
-          <i class="bi bi-0-circle"style={{fontSize:50}}></i>
+          <p class="text-center">
+            <i class="bi bi-0-circle" style={{ fontSize: 50 }}></i>
           </p>
-         <h2 style={{color: "red"}}>Funds take 3 to 7 days to pend</h2> 
-         <h4>
+          <h2 style={{ color: "red" }}>Funds take 3 to 7 days to pend</h2>
+          <h4>
 
-         <p class="text-center">
-         These funds are transferred via a Gamepass purchase and it will take 3 to 7 days to reach your account!
-         </p>
-         <p class="text-center">
-Additionally, you should use a new gamepass on every purchase for your safety, if you have any existing ones, change the price to a different price to what you are purchasing.
-</p>
-         </h4>
-         <p class="text-center">
-          <Button variant="info" onClick={handleCloseChild}>
-            Understood
-          </Button>
-          <Button variant="danger" onClick={handleCloseChild}>
-            Cancel
-          </Button>
+            <p class="text-center">
+              These funds are transferred via a Gamepass purchase and it will take 3 to 7 days to reach your account!
+            </p>
+            <p class="text-center">
+              Additionally, you should use a new gamepass on every purchase for your safety, if you have any existing ones, change the price to a different price to what you are purchasing.
+            </p>
+          </h4>
+          <p class="text-center">
+            <Button variant="info" onClick={handleCloseChild}>
+              Understood
+            </Button>
+            <Button variant="danger" onClick={handleCloseChild}>
+              Cancel
+            </Button>
           </p>
         </Modal.Body>
 
@@ -76,3 +90,4 @@ Additionally, you should use a new gamepass on every purchase for your safety, i
 }
 
 export default Example;
+*/
