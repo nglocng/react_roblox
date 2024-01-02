@@ -13,7 +13,6 @@ import {useNavigate} from 'react-router-dom';
 function Header () {
 
     const navigate = useNavigate();
-
     const handleClick = () => {
       // 👇️ replace set to true
       navigate('/login', {replace: true});
@@ -27,8 +26,7 @@ function Header () {
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <Navbar.Text>
-                            <Button variant="outline-info" className="button-signup">Sign Up</Button>
-                           
+                            <Button variant="outline-info" className="button-signup">Sign Up</Button>                           
                             <Button 
                              onClick={handleClick}
                             variant="outline-danger">Sign In</Button>
