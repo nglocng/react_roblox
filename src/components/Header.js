@@ -4,19 +4,20 @@ import Col from 'react-bootstrap/Col'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
-import Button from 'react-bootstrap/Button';
-import { withRouter } from "react-router";
-//import { Navigate } from "react-router-dom";
-import {useNavigate} from 'react-router-dom';
+import Button from 'react-bootstrap/Button'
+import { withRouter } from "react-router"
+import { Navigate } from "react-router-dom"
+import {useNavigate} from 'react-router-dom'
 //import Login from "components/login/Login"
 
 function Header () {
 
-    const navigate = useNavigate();
+    //const navigate = useNavigate()
+   
     const handleClick = () => {
-      // 👇️ replace set to true
-      navigate('/login', {replace: true});
-    };
+      //navigate('/login', {replace: true})
+      this.props.navigation.navigate('/login')
+    }
 
     return (
         <header>
